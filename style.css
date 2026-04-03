@@ -1,0 +1,84 @@
+:root {
+  --darkblue: #002037;
+  --middarkblue: #234c6a;
+  --midblue: #078ef6;
+  --lightgrey: #e3e3e3;
+}
+
+@font-face {
+  font-family: Estiana;
+  src: url("AVEstiana-Black-BF6776121fde086.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+}
+
+body {
+  background: linear-gradient(#001523 0%, #03253e 60%, #03406c 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 250px;
+  display: block;
+}
+
+header h1 {
+  font-size: 46px;
+  font-family: Estiana;
+  color: var(--lightgrey);
+  position: relative;
+  top: 50%;
+  left: -3%;
+  transform: translateY(-50%, -50%);
+  margin: 0;
+  z-index: 2;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro p {
+  font-family: Inter;
+  color: var(--lightgrey);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.brand {
+  color: var(--midblue);
+}
+
+.intro input {
+  width: 450px;
+  height: 55px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 30px;
+  background-color: var(--middarkblue);
+  color: var(--lightgrey);
+  outline: none;
+  font-size: 22px;
+}
+
+.intro input::placeholder {
+  font-size: 16px;
+  color: var(--darkblue);
+}
