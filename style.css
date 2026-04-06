@@ -29,6 +29,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 20px;
 }
 
 header img {
@@ -42,7 +43,7 @@ header h1 {
   color: var(--lightgrey);
   position: relative;
   top: 50%;
-  left: -3%;
+  left: -3.5%;
   transform: translateY(-50%, -50%);
   margin: 0;
   z-index: 2;
@@ -75,7 +76,7 @@ main input {
   background-color: var(--middarkblue);
   color: var(--lightgrey);
   outline: none;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 main button {
@@ -91,9 +92,67 @@ main button {
 .inputs {
   display: flex;
   gap: 10px;
+  padding-left: 60px;
 }
 
 main input::placeholder {
   font-size: 16px;
   color: var(--darkblue);
+}
+
+.display {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--lightgrey);
+  letter-spacing: 2px;
+  font-size: 26px;
+  margin-top: 40px;
+}
+
+.general-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+h3 {
+  color: var(--midblue);
+  font-size: 22px;
+}
+
+.content p {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 250px;
+  height: 250px;
+}
+
+.meteo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.meteo-content img {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 150px;
+  height: 150px;
 }
